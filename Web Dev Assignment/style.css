@@ -1,0 +1,212 @@
+header {
+    background-color: #333;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: grey; 
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex; 
+    justify-content: center; 
+    padding: 10px 0;
+}
+
+
+.navbar a {
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    text-decoration: none; 
+    padding: 15px 20px; 
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: aquamarine;
+    color: black;
+    border-radius: 5px;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    gap: 100px;
+}
+
+.card-list .card-item {
+    background: beige;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+    text-align: center;
+    height: 100%;
+    display: block;
+  
+}
+
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+
+.card-list .card-item img {
+    width: 50%;
+    aspect-ratio: 11/16;
+    border-radius: 8px;
+    object-fit: cover;  
+}
+
+.card-item h2 {
+    color: darkblue;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
+.card-item p {
+    color: #000;
+    font-size: 1rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
+.PayButton {
+    background-color: red;
+    border: solid 1px #000;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.PayCard{
+    background: beige;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.row {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+.row label{
+    min-width: 50px; 
+    font-weight: bold;
+}
+
+#ExpirationDateYear{
+    width: 50px;
+}
+
+#ExpirationDateMonth{
+    width: 50px ;
+}
+
+#CardNumber{
+    width: 40%;
+}
+
+
+
+#SecurityCode{
+    width: 50px;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 200px;
+    padding: 2px;
+    margin: 2px;
+    box-sizing: border-box;
+    border: 2px solid aquamarine;
+    border-radius: 4px;
+}
+
+input[type = submit]{
+     border: 2px solid black;
+     border-radius: 4px;
+     background-color: aquamarine;
+     color: black;
+     font-size: 1.2rem;
+
+}
+
+.PayCard img {
+    width: 50%;
+    border-radius: 8px;
+    object-fit: cover;  
+    display: block;
+    margin: 0 auto;
+}
+
+.SuccessCard{
+    background: beige;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: 60px auto;
+}
+
+.SuccessCard img {
+    width: 10%;
+    border-radius: 8px;
+    object-fit: cover;  
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar a {
+        width: 100%; 
+    }
+}

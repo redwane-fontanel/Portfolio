@@ -1,0 +1,1 @@
+This is a group project that I did in uni with 4 other classmates. We worked on this project for about 8 months and met regularly to meet all the requirements and deadlines. This website aim to help student with different things, such as budget, time management etc

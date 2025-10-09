@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+    </head>
+     <script src="script.js"></script>
+     
+    <body>
+        <header>
+          <h1>My Bookshop</h1>
+          <div class="navbar">
+            <a href="home.html" class="active">Home</a>
+            <a href="#AboutUs">About Us</a>
+            <a href="#ContactUs">Contact Us</a>
+          </div>
+          <hr>
+        </header>
+<h1>Payment</h1>
+
+<div class="PayCard">
+  <img src="images/creditcard.png" alt="Credit card">
+
+  <div class="row">
+    <label for="CardNumber">Card Number</label>
+    <input type="text" id="CardNumber">
+  </div>
+
+  <div class="row">
+    <div class="row">
+      <label for="ExpirationDateMonth">Expiration Date</label>
+      <input type="text" id="ExpirationDateMonth" placeholder="Month" maxlength="2">
+    </div>
+
+    <div class="row">
+      <input type="text" id="ExpirationDateYear" placeholder="Year" maxlength="4">
+    </div>
+  </div>
+
+  <div class="row">
+    <label for="SecurityCode">CCV</label>
+    <input type="text" id="SecurityCode" maxlength="4">
+  </div>
+  <input type="submit" id="ContinueButton" value="Continue">
+</div>
+
+
+
+        
+    </body>
+</html>

@@ -1,0 +1,1 @@
+Weather App, asking the user to input a city. This code will then output the temperature. An API was used for this program

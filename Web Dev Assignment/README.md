@@ -1,0 +1,1 @@
+This is my web development project for uni. I was asked to make a bookshop website, and add a page that could accept a user's credit card using Java Script to check if the inputted details follow the requirements. Upon validation, the Java Script codes send a POST request to a server and will then validate the payment.

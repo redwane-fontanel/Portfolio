@@ -1,0 +1,92 @@
+/* General Page Styling */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to right, #007bff, #6610f2);
+    margin: 0;
+    padding-top: 70px;
+    color: white;
+}
+
+/* Fix Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Help Page Container */
+.help-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 80px auto;
+    color: #333;
+}
+
+/* Header */
+.help-container h1 {
+    color: #007bff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Help Sections */
+.help-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.help-section h3 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.help-section ul {
+    padding-left: 20px;
+}
+
+.help-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.help-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #2f3b69;
+    color: white;
+    margin-top: 50px;
+}
