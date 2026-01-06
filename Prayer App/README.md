@@ -1,1 +1,0 @@
-This is a prayer app coded in python. This app allows you to enter the name of a city and see the time of each daily prayers for muslims as well as the current time in the inputted city. I made this app as I thought that it would be a good idea as a muslim to make an app that I could use daily.
