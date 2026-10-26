@@ -1,0 +1,28 @@
+{
+"properties": {
+  "displayName": "Allowed Resource Types",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "This policy allows only specified resource types in the subscription.",
+  "parameters": {},
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "notIn": [
+            "Microsoft.Storage/storageAccounts",
+            "Microsoft.App/managedEnvironments",
+            "Microsoft.App/containerApps"
+        ]
+        }
+        
+      ]
+    
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
+}
+}

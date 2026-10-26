@@ -1,0 +1,23 @@
+{
+"properties": {
+  "displayName": "Do not allow creation of storage accounts",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "This policy prevents creation of storage accounts in the subscription.",
+  "parameters": {},
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Storage/storageAccounts"
+        }
+      ]
+      
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
+}
+}

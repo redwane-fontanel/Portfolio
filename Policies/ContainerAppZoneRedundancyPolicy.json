@@ -1,0 +1,26 @@
+{
+"properties": {
+  "displayName": "Do not allow creation of ContainerApp unless zone redundancy is disabled",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "This policy prevents creation of Container App environments when zone redundancy is enabled.",
+  "parameters": {},
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.App/managedEnvironments"
+        },
+        {
+          "field": "Microsoft.App/managedEnvironments/zoneRedundant",
+          "equals": true
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
+}
+}
